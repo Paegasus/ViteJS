@@ -29,7 +29,7 @@ jobs:
           npm i -g vite
           npm init vite@latest CodeEditor --template vanilla
       - name: Zip repo
-        uses: papeloto/action-zip@v1
+        uses: vimtor/action-zip@v1
         with:
           files: /
           dest: CodeEditor.zip
