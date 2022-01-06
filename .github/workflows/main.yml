@@ -29,13 +29,14 @@ jobs:
           npm i -g vite
           npm i -g create-vite
           npm init vite CodeEditor -- --template vanilla
-      - name: Zip repo
-        uses: vimtor/action-zip@v1
-        with:
-          files: /
-          dest: CodeEditor.zip
-      - name: Archive artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: CodeEditor
-          path: CodeEditor.zip
+          ls
+#      - name: Zip repo
+#        uses: vimtor/action-zip@v1
+#        with:
+#          files: /
+#          dest: CodeEditor.zip
+#      - name: Archive artifact
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: CodeEditor
+#          path: CodeEditor.zip
