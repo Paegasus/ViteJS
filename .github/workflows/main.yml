@@ -28,7 +28,7 @@ jobs:
         run: |
           npm i -g vite
           npm i -g create-vite
-          npm init vite@latest CodeEditor -- --template vanilla
+          npm init vite CodeEditor -- --template vanilla
       - name: Zip repo
         uses: vimtor/action-zip@v1
         with:
