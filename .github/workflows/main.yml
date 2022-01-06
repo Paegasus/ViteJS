@@ -27,7 +27,8 @@ jobs:
       - name: Generate Bundle
         run: |
           npm i -g vite
-          npm init vite CodeEditor --template vanilla
+          npm i -g create-vite
+          npm init vite@latest CodeEditor -- --template vanilla
       - name: Zip repo
         uses: vimtor/action-zip@v1
         with:
@@ -36,5 +37,5 @@ jobs:
       - name: Archive artifact
         uses: actions/upload-artifact@v2
         with:
-          name: CodeEditor.zip
+          name: CodeEditor
           path: CodeEditor.zip
