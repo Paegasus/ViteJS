@@ -24,11 +24,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '${{ matrix.node-version }}'
-      - name: Generate Bundle
+      - name: Generate Vite project
         run: |
           npm i -g vite
-          npm i -g create-vite
-          npm init vite CodeEditor -- --template vanilla
+#          npm i -g create-vite
+          npm init vite@latest
       - name: List file is repo
         run: |
           ls ${{ github.workspace }}
