@@ -27,7 +27,7 @@ jobs:
       - name: Generate Vite project
         run: |
           npm i -g vite
-          npm init vite@latest
+          npm init vite@latest my-vanilla-app -- --template vanilla
       - name: List file is repo
         run: |
           ls ${{ github.workspace }}
