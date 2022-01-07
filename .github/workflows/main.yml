@@ -27,7 +27,6 @@ jobs:
       - name: Generate Vite project
         run: |
           npm i -g vite
-#          npm i -g create-vite
           npm init vite@latest
       - name: List file is repo
         run: |
