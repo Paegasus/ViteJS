@@ -31,13 +31,13 @@ jobs:
       - name: List file is repo
         run: |
           ls ${{ github.workspace }}
-      - name: Zip repo
-        uses: vimtor/action-zip@v1
-        with:
-          files: /
-          dest: CodeEditor.zip
+#      - name: Zip repo
+#        uses: vimtor/action-zip@v1
+#        with:
+#          files: /code-editor
+#          dest: code-editor.zip
       - name: Archive artifact
         uses: actions/upload-artifact@v2
         with:
-          name: CodeEditor
-          path: CodeEditor.zip
+          name: code-editor
+          path: code-editor
