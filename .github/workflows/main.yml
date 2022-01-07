@@ -29,6 +29,8 @@ jobs:
           npm i -g vite
           npm i -g create-vite
           npm init vite CodeEditor -- --template vanilla
+      - name: List file is repo
+        run: |
           ls ${{ github.workspace }}
 #      - name: Zip repo
 #        uses: vimtor/action-zip@v1
